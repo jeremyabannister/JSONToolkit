@@ -6,37 +6,44 @@
 //
 
 ///
-public extension Data {
+extension Data {
     
     ///
-    static func jsonData (from value: some Encodable) throws -> Self {
+    public static var emptyJSONObject: Self { "{}".utf8Data }
+}
+
+///
+extension Data {
+    
+    ///
+    public static func jsonData (from value: some Encodable) throws -> Self {
         try value.asJSONData()
     }
 }
 
 ///
-public extension Data {
+extension Data {
     
     ///
-    static func jsonDouble (_ double: Double) -> Self {
+    public static func jsonDouble (_ double: Double) -> Self {
         try! double.asJSONData()
     }
 }
 
 ///
-public extension Data {
+extension Data {
     
     ///
-    static func jsonInt (_ int: Int) -> Self {
+    public static func jsonInt (_ int: Int) -> Self {
         try! int.asJSONData()
     }
 }
 
 ///
-public extension Data {
+extension Data {
     
     ///
-    static func jsonBool (_ bool: Bool) -> Self {
+    public static func jsonBool (_ bool: Bool) -> Self {
         try! bool.asJSONData()
     }
 }

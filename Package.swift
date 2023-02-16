@@ -25,6 +25,10 @@ let package = Package(
             url: "https://github.com/jeremyabannister/ErrorMessage",
             from: "0.1.2"
         ),
+        .package(
+            url: "https://github.com/jeremyabannister/String-utf8Data",
+            from: "0.1.0"
+        ),
     ],
     targets: [
         .target(
@@ -32,7 +36,8 @@ let package = Package(
             dependencies: [
                 "Data-humanReadableDescription",
                 "Data-utf8String",
-                "ErrorMessage"
+                "ErrorMessage",
+                "String-utf8Data",
             ]
         ),
         .testTarget(
