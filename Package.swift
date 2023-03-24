@@ -22,8 +22,8 @@ let package = Package(
             from: "0.1.0"
         ),
         .package(
-            url: "https://github.com/jeremyabannister/ErrorMessage",
-            from: "0.1.2"
+            url: "https://github.com/jeremyabannister/ErrorMessage-module",
+            from: "0.1.0"
         ),
         .package(
             url: "https://github.com/jeremyabannister/String-utf8Data",
@@ -36,13 +36,15 @@ let package = Package(
             dependencies: [
                 "Data-humanReadableDescription",
                 "Data-utf8String",
-                "ErrorMessage",
+                "ErrorMessage-module",
                 "String-utf8Data",
             ]
         ),
         .testTarget(
             name: "JSONToolkit-tests",
-            dependencies: ["JSONToolkit"]
+            dependencies: [
+                "JSONToolkit",
+            ]
         ),
     ]
 )
