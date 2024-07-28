@@ -13,21 +13,29 @@ let package = Package(
         ),
     ],
     dependencies: [
+        
+        ///
         .package(
             url: "https://github.com/jeremyabannister/Data-humanReadableDescription",
-            from: "0.1.0"
+            "0.1.1" ..< "0.2.0"
         ),
+        
+        ///
         .package(
             url: "https://github.com/jeremyabannister/Data-utf8String",
-            from: "0.1.0"
+            "0.1.1" ..< "0.2.0"
         ),
+        
+        ///
         .package(
-            url: "https://github.com/jeremyabannister/ErrorMessage-module",
-            from: "0.1.0"
+            url: "https://github.com/jeremyabannister/ErrorMessage-package",
+            "0.1.0" ..< "0.2.0"
         ),
+        
+        ///
         .package(
             url: "https://github.com/jeremyabannister/String-utf8Data",
-            from: "0.1.0"
+            "0.1.1" ..< "0.2.0"
         ),
     ],
     targets: [
@@ -36,7 +44,7 @@ let package = Package(
             dependencies: [
                 "Data-humanReadableDescription",
                 "Data-utf8String",
-                "ErrorMessage-module",
+                .product(name: "ErrorMessage-module", package: "ErrorMessage-package"),
                 "String-utf8Data",
             ]
         ),
