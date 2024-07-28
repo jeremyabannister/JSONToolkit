@@ -6,23 +6,35 @@
 //
 
 ///
-public extension Data {
+extension Data {
     
     ///
-    func jsonDecoded <T: Decodable> (as type: T.Type = T.self) throws -> T {
+    public func jsonDecoded<
+        T: Decodable
+    >(
+        as type: T.Type = T.self
+    ) throws -> T {
+        
+        ///
         do {
+            
+            ///
             return try JSONDecoder().decode(type, from: self)
+            
+        ///
         } catch {
+            
+            ///
             throw "DecodingError: \(error), Data: \(self.humanReadableDescription)".asErrorMessage()
         }
     }
 }
 
 ///
-public extension Encodable {
+extension Encodable {
     
     ///
-    func asJSONString () throws -> String? {
+    public func asJSONString() throws -> String? {
         try self
             .asJSONData()
             .utf8String
@@ -30,10 +42,10 @@ public extension Encodable {
 }
 
 ///
-public extension Encodable {
+extension Encodable {
     
     ///
-    func asJSONData () throws -> Data {
+    public func asJSONData() throws -> Data {
         try JSONEncoder()
             .encode(self)
     }
