@@ -1,12 +1,13 @@
 {
+  "originHash" : "359166b8971ec5c7f14f971f77f0325f42cf92ede8cc7d6fede8bef1ec0a30eb",
   "pins" : [
     {
       "identity" : "data-humanreadabledescription",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/Data-humanReadableDescription",
       "state" : {
-        "revision" : "392a2f0aa4fc3742c830c2c3dbdb14de499f72c5",
-        "version" : "0.1.1"
+        "revision" : "e418d905afedaaf53c2d486ef6f24ad5a4afd348",
+        "version" : "0.1.2"
       }
     },
     {
@@ -14,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/Data-utf8String",
       "state" : {
-        "revision" : "31e935570c8926bb4b21981cccf388e78968c4a3",
-        "version" : "0.1.1"
+        "revision" : "5ca85ff523e885287092339bfea615f331e0dc13",
+        "version" : "0.1.2"
       }
     },
     {
@@ -23,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/ErrorMessage-package",
       "state" : {
-        "revision" : "317e7dbba44dc6e28a4a169975d95e1a5ed5911b",
-        "version" : "0.1.0"
+        "revision" : "8d8529f87a220c8958e2c28ec791fa0b1a1cd526",
+        "version" : "0.1.2"
       }
     },
     {
@@ -32,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/String-utf8Data",
       "state" : {
-        "revision" : "d01f5e203709814f3ed2170408eea54c06af17bc",
-        "version" : "0.1.1"
+        "revision" : "ca411301e55e882c825e7b9704752e9349854bd0",
+        "version" : "0.1.2"
       }
     },
     {
@@ -41,10 +42,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/XCTestToolkit",
       "state" : {
-        "revision" : "da14ae755f67262ae27d863b41a6ac9514f4db98",
-        "version" : "0.2.4"
+        "revision" : "9acc3db205b6c444ac5cc9591cf3bc277cd13524",
+        "version" : "0.2.6"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

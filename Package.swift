@@ -1,9 +1,7 @@
-// swift-tools-version: 5.7
+// swift-tools-version:6.0
 
-///
 import PackageDescription
 
-///
 let package = Package(
     name: "JSONToolkit",
     products: [
@@ -13,29 +11,21 @@ let package = Package(
         ),
     ],
     dependencies: [
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/Data-humanReadableDescription",
-            "0.1.1" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.2")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/Data-utf8String",
-            "0.1.1" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.2")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/ErrorMessage-package",
-            "0.1.0" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.2")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/String-utf8Data",
-            "0.1.1" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.2")
         ),
     ],
     targets: [
